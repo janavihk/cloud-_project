@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Include JS files -->
+	<script src="index.js"></script>
+</head>
+
+<body style="background-color: rgb(160, 143, 95);">
+	<div class="container" style="border: 3px solid black;">
+		<marquee><font color="#00FFF0"><h1>BMI Calculator</h1></font></marquee>
+		<hr>
+		<center>
+			<p> Enter your Height (in cm)</p>
+window.onload = () => {
+	let button = document.querySelector("#btn");
+
+	// Function for calculating BMI
+	button.addEventListener("click", calculateBMI);
+};
+
+function calculateBMI() {
+
+	/* Getting input from user into height variable.
+	Input is string so typecasting is necessary. */
+	let height = parseInt(document
+			.querySelector("#height").value);
+
+	/* Getting input from user into weight variable.
+	Input is string so typecasting is necessary.*/
+	let weight = parseInt(document
+			.querySelector("#weight").value);
+
+	let result = document.querySelector("#result");
+
+	// Checking the user providing a proper
+			<input type="text" id="height">
+	
+			<p> Enter your Weight (in kg)</p>
+	
+			<input type="text" id="weight">
+			<br>
+	
+			<button id="btn">Calculate</button>
+			<div id="result"></div>
+		</center>
+		<br>
+	</div>
+	<div>
+		<a href="index1.html"><center><h1>If you are Underweight click here</h1></center></a>
+		<a href="index2.html"><center><h1>If you are Overweight click here</h1></center></a>
+	</div>
+		
+	
+	
+</body>
+
+</html>
